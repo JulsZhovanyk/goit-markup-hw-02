@@ -130,15 +130,17 @@ body {
   line-height: 1.16;
   text-align: center;
 }
-.hidden {
+.visually-hidden {
   position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
+  white-space: nowrap;
   width: 1px;
+  height: 1px;
   overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .section-element {
   font-weight: 700;
@@ -197,16 +199,6 @@ body {
 /* portfolio styles */
 .section-portfolio {
   background-color: var(--color-one);
-}
-.section-portfolio-header {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
 }
 .button-portfolio {
   font-family: "Roboto", sans-serif;
